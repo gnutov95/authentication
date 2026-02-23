@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ТЕСТ — Вход</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/registr.css">
+    <link rel="stylesheet" href="css/loginPassword.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <h1>С возвращением!</h1>
+        <p>
+            Войдите в свой аккаунт, чтобы получить доступ ко всем возможностям платформы.
+            Быстро, удобно и безопасно.
+        </p>
+    </div>
+    <div class="right">
+        <div class="form-title">Вход в аккаунт</div>
+        <form method="post" action="/login" id="loginForm">
+            <div class="input-group">
+                <label>Email/Username</label>
+                <input type="text" id="login" name="login" placeholder="example@mail.com" required />
+            </div>
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required />
+            </div>
+            <button type="submit" class="btn">Войти</button>
+            <div class="error-message" id="errorMessage">
+                Неверный email или пароль
+            </div>
+        </form>
+        <div class="login-link">
+            Нет аккаунта? <a href="/registr">Создать аккаунт</a>
+        </div>
+        <script src="js/loginPassword.js"></script>
+    </div>
+</div>
+
+
+</body>
+</html>
